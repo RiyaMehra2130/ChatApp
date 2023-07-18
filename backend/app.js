@@ -23,7 +23,7 @@ const io = new Server(server, {
     }
 })
 io.on("connection", (socket) => {
-    console.log("A new connection", socket.id)
+    console.log("A new connection--", socket.id)
 
     socket.on("join chat", (userId) => {
         socket.join(userId)
